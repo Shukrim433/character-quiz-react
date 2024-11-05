@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0;
+  padding: 10px;
+  background: #00426d;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* HOME PAGE STYLING */
+
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+  text-align: center;
+  color: #b38e22;
+  padding: 40px 30px 70px;
+}
+
+.welcome-page h1 {
+  margin: 10px;
+}
+
+.char-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.char-icons img {
+  width: 220px;
+}
+
+button {
+  background: #b38e22;
+  color: white;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 40px;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+button:hover {
+  background: #51400f;
+  cursor: pointer;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+
+@media (min-width: 320px) {
+  .char-icons img {
+    width: 130px;
+  }
+}
+
+@media (min-width: 641px) {
+  .char-icons img {
+    width: 200px;
+  }
+}
+
+
+/* QUESTIONS PAGE STYLING */
