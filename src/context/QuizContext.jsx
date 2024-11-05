@@ -11,7 +11,7 @@ export const useQuizContext = () => {
 
 // provider:
 export const QuizContextProvider = ({ children }) => {
-  let currentQuestionIndex = 0;
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   let percy = 0;
   let annabeth = 0;
   let grover = 0;
@@ -75,9 +75,11 @@ export const QuizContextProvider = ({ children }) => {
   ];
 
   const stopQuiz = () => {
+    // if statements to determine winner
     const navigate = useNavigate();
     navigate("/results");
   };
+  
 
   const values = {
     questions,
@@ -85,6 +87,7 @@ export const QuizContextProvider = ({ children }) => {
     annabeth,
     grover,
     currentQuestionIndex,
+    setCurrentQuestionIndex,
     stopQuiz,
   };
 
