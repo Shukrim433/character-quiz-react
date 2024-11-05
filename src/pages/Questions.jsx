@@ -16,15 +16,17 @@ const Questions = () => {
     setCurrentQuestionIndex,
   } = useQuizContext();
   const navigate = useNavigate();
+  
   console.log(percy, "p");
   console.log(grover, "g");
   console.log(annabeth, "a");
+
   if (currentQuestionIndex >= questions.length) {
     navigate("/results");
     return;
   }
+  
   const nextQuestion = (event) => {
-    console.log(event.target.value, "click");
     if (event.target.value === questions[currentQuestionIndex].percy) {
       setPercy(percy + 1);
     }
