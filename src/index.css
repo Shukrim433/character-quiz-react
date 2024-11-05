@@ -68,5 +68,55 @@ button:hover {
   }
 }
 
-
 /* QUESTIONS PAGE STYLING */
+
+.questions-page {
+  margin: 100px auto;
+  padding: 30px 40px 70px;
+  color: #b38e22;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.questions-page h1 {
+  margin-bottom: 10px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options-container div {
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 7px;
+  width: 400px;
+  height: fit-content;
+  padding: 5px;
+  background: #b38e22;
+  color: white;
+}
+
+.options-container div:hover {
+  background: #51400f;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .options-container div {
+    width: 300px;
+  }
+}
+
+@media (min-width: 641px) {
+  .options-container div {
+    width: 400px;
+  }
+}

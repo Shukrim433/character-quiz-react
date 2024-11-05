@@ -13,7 +13,7 @@ const Questions = () => {
   };
   return (
     <div className="questions-page">
-      <h2 className="question">QUESTION TEXT</h2>
+      <h1 className="question">QUESTION TEXT</h1>
       <div className="char-icons">
         <img src="/PERCY JACKSON.png" alt="character icon" />
         <img src="/GROVER UNDERWOOD.png" alt="character icon" />
