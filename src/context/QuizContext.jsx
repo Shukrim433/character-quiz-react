@@ -12,9 +12,9 @@ export const useQuizContext = () => {
 // provider:
 export const QuizContextProvider = ({ children }) => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  let percy = 0;
-  let annabeth = 0;
-  let grover = 0;
+  const [percy, setPercy] = useState(0);
+  const [annabeth, setAnnabeth] = useState(0);
+  const [grover, setGrover] = useState(0);
 
   const questions = [
     {
@@ -79,7 +79,6 @@ export const QuizContextProvider = ({ children }) => {
     const navigate = useNavigate();
     navigate("/results");
   };
-  
 
   const values = {
     questions,
@@ -89,6 +88,9 @@ export const QuizContextProvider = ({ children }) => {
     currentQuestionIndex,
     setCurrentQuestionIndex,
     stopQuiz,
+    setPercy,
+    setAnnabeth,
+    setGrover,
   };
 
   return <QuizContext.Provider value={values}>{children}</QuizContext.Provider>;

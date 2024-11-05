@@ -92,31 +92,34 @@ button:hover {
   align-items: center;
 }
 
-.options-container div {
+.options-container button {
   margin: 10px;
   border: 2px solid white;
   border-radius: 7px;
   width: 400px;
+  font-size: x-large;
+  font-family: "sans-serif";
+  font-weight: bold;
   height: fit-content;
   padding: 5px;
   background: #b38e22;
   color: white;
 }
 
-.options-container div:hover {
+.options-container button:hover {
   background: #51400f;
   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
   cursor: pointer;
 }
 
 @media (min-width: 320px) {
-  .options-container div {
+  .options-container button {
     width: 300px;
   }
 }
 
 @media (min-width: 641px) {
-  .options-container div {
+  .options-container button {
     width: 400px;
   }
 }
