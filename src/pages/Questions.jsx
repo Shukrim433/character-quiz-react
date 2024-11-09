@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Questions = () => {
   // onclick incrament global currentQuestionIndex count and reinvoke global displayQuestions function (which will contain condition to check if CQI is >=  questions array length thus invoking global stopQuiz() function)
+  const navigate = useNavigate();
   const {
     percy,
     annabeth,
@@ -15,17 +16,12 @@ const Questions = () => {
     questions,
     setCurrentQuestionIndex,
   } = useQuizContext();
-  const navigate = useNavigate();
-  
-  console.log(percy, "p");
-  console.log(grover, "g");
-  console.log(annabeth, "a");
 
   if (currentQuestionIndex >= questions.length) {
     navigate("/results");
     return;
   }
-  
+
   const nextQuestion = (event) => {
     if (event.target.value === questions[currentQuestionIndex].percy) {
       setPercy(percy + 1);
