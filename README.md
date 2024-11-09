@@ -13,5 +13,5 @@ I built this project to get back into the basics of react, and refamiliarise mys
 
 
 ## Application
-
+https://shukri-react-quiz.netlify.app
 ![alt text](image.png)
